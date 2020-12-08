@@ -1,0 +1,613 @@
+/* Michelle style for all pages */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin-top: 0px;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.row {
+	overflow:hidden;
+}
+
+/* Michelles Nav Bar 
+created with https://www.w3schools.com/howto/howto_js_topnav_responsive.asp and https://www.freecodecamp.org/news/how-to-build-a-responsive-navbar-with-a-toggle-menu-using-flexbox-3438e1d08783/ */
+.navbar {
+	font-size: 16px;
+	background-image: linear-gradient(260deg, #333333 0%, #1f1f1f 100%);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding-bottom: 10px;
+}
+
+.main-nav {
+	list-style-type: none;
+	display: none;
+}
+
+.main-nav.active {
+	display: block;
+}
+
+.nav-links,
+.guide {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.main-nav li {
+	text-align: center;
+	margin: 15px auto;
+}
+
+.guide {
+	display: inline-block;
+	font-size: 22px;
+	margin-top: 10px;
+	margin-left: 20px;
+  }
+/* How the NavBar toggles up and down when in a small screen */
+.navbar-toggle {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	font-size: 24px;
+	display:block;
+	margin-top: 4px;
+	height: 16px;
+	width: 24px;
+	transition: all linear 0.2s;
+}
+
+.navbar-toggle.active {
+	transform: rotate(90deg);
+}
+
+@media screen and (min-width: 768px) {
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 0;
+		height: 70px;
+		align-items: center;
+	}
+
+	.main-nav {
+		display: flex;
+		margin-right: 30px;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	.main-nav.active {
+		display: none;
+	}
+
+	.main-nav li {
+		margin: 0 auto;
+	}
+
+	.nav-links {
+		margin-left: 17px;
+	}
+	.guide {
+		margin-top: 0;
+	}
+	.navbar-toggle {
+		display: none;
+	}
+
+	.guide:hover,
+  	.nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+/********************************************************************************************/
+/* Michelle About page */
+
+.background-about{
+	background-color: #ffffff;
+}
+
+/*https://www.w3schools.com/howto/howto_css_about_page.asp*/
+/*To style the header section of my layout*/
+html {
+	box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+
+  .about-section h1 {
+	color: rgb(0, 191, 216);
+}
+  .about-section {
+	padding: 50px;
+	text-align: center;
+	background-color: #444444;
+	color: white;
+  }
+
+  .column {
+	float: left;
+	width: 33.3%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+  }
+
+  .container {	
+	background-color: #e6e6e6;
+	padding: 0 16px;
+	-webkit-flex: 2;
+	-ms-flex: 2;
+	flex: 2;
+  }
+
+  .container2 {
+	padding: 0 16px;
+	-webkit-flex: 2;
+	-ms-flex: 2;
+	flex: 2;
+  }
+  
+  .title {
+	color: rgb(0, 191, 216);
+	font: large;
+  }
+
+/*Michelles Button for links on about us page */
+  .button {
+	border: none;
+	text-decoration: none;
+	padding: 7px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 194, 228);
+	text-align: center;
+	cursor: pointer;
+	height: 179px;
+	font-size: large;
+	font-weight: bold;
+	margin-left: 33%;
+  }
+
+  .button:hover {
+	background-color: rgb(65, 65, 65);
+  }
+  
+  .clickme {
+	text-align: center;
+	color:rgb(255, 255, 255) ;
+	background-color: rgb(0, 194, 228) ;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: large;
+	font-weight: bold;
+	float: left;
+	margin-left: 8px;
+	padding: 79px 8px;
+	width: 33%;
+	overflow: hidden;
+  }
+  
+  .clickme:hover {
+	background-color: rgb(255, 141, 35);
+  }
+
+  @media screen and (max-width: 650px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	}
+  }
+/*****************************************************************************/
+/*Styling h1*/
+.setup-section h1 {
+	color: rgb(255, 255, 255);
+	kerning: 1%;
+}
+.setup-section {
+	padding: 50px;
+	text-align: center;
+	background-color: rgb(0, 191, 216);
+	color: rgb(27, 27, 27);
+  }
+  
+.Forum-section{
+	padding: 50px;
+	text-align: center;
+	background-color: rgba(255, 141, 35, 0.733);
+	color: rgb(92, 92, 92);
+  }
+
+.specs-section{
+	padding: 50px;
+	text-align: center;
+	background-color:rgb(4, 255, 201);
+}
+
+/*Michelle */
+h1 {
+	color: rgb(42, 42, 42);
+	text-align: center;
+}
+
+h2 {color: rgb(42, 42, 42);
+text-align: center;
+padding: 1%;
+}
+
+/* Michelle Footer for about us page*/
+.footer2 {
+	color: rgb(0, 194, 228);
+	background-color: rgb(46, 46, 46);
+	width: 100%;
+	height: 2%; 
+	text-align: center;
+	padding: 1%;
+	margin-top: 37%;
+}
+@media screen and (max-width: 650px) {
+	.footer2 {
+	width: 100%;
+	display: block;
+	}
+}
+/*************************************************************************/
+/* HOLLIE - HOME PAGE*/
+/* main wrapper for images on index page */
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+   }
+  
+/* Images within the wrapper for the index page */
+.images {
+	padding: 60px;
+	overflow: hidden;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	}
+
+/* this is for the text layer that is presnt when hovering over image */
+.layer {
+	font-size: 20px;
+	font-weight: bold;
+	opacity: 0;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 60%;
+	text-align: center;
+	padding: 5px;
+	background:rgb(255, 255, 255);
+	color: rgb(97, 97, 97);
+	transition: all 1s ease;
+	/* text transitions for the text appearing refernce https://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp */
+	/* p { 
+		transition: ease-out;
+	} */
+  }
+  
+  /* hover options. For experimenting and learning about transition options e.g speed and easing
+   i referenced https://www.w3schools.com/css/css3_transitions.asp */
+  .images:hover .layer {
+	opacity: 0.8;
+	width: 291px;
+	height: 211px;
+	border-radius: 12px;
+	transition-timing-function: ease-in-out;
+  }
+
+.imageLinks {
+	background: none;
+	font-size: larger;
+
+}
+
+.bghome {
+background:rgb(243, 243, 243);
+}
+
+/*************************************************************************/
+/*************************************************************************/
+/*   HOLLIE- SET UP PAGE */
+.columnSetup {
+	float: left;
+	Width: 15%;
+	background-color:rgb(248, 248, 248);
+	padding-left: 50px;
+	padding-top: 100px;
+}
+
+.columnSetup2 {
+	float: left;
+	Width: 85%;
+	background-color:rgb(248, 248, 248);
+	padding: 20px;
+	text-align: left;
+}
+
+.rowSetup {
+	float: left;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	Height: 50px;
+	color: rgb(65, 65, 65);
+	background-color: rgb(235, 235, 235);
+}
+
+.rowSetup2  {
+	padding: 10px;
+	background-color:rgb(248, 248, 248);
+	text-align: center;
+	overflow: hidden;
+}
+
+
+/*Michelles Button for links on specs page */
+ .booton {
+	border: none;
+	text-decoration: none;
+	padding: 7px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 141, 35);
+	text-align: center;
+	cursor: pointer;
+	height: 179px;
+	font-size: large;
+	font-weight: bold;
+  }
+
+  .booton:hover {
+	background-color: rgb(4, 255, 201);
+  } 
+
+/**************************************************************************/
+/**************************************************************************/
+/* HOllie- Forum/Questions Page*/
+
+.questions {
+	background-color: rgb(243, 243, 243);
+}
+
+
+/* Buttons to open and close the accordion box for catagories*/
+/* refernce used for Cursor icons https://www.w3schools.com/cssref/pr_class_cursor.asp */
+.accordion {
+	color: #444;
+	cursor: help;
+	padding: 25px;
+	width: 100%;
+	text-align: center;
+	border: none;
+  }
+  
+  /* background color for button when it is hovered/clicked on */
+  .accordion .active, .accordion:hover {
+	background-color:rgba(255, 141, 35, 0.082);
+  }
+  
+  /* Styling Accordian */
+  .panel {
+	width: 100%;
+	padding: 0 10px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+	padding: 20px;
+	font-size: 14px;
+	font-family: 'Josefin Sans', sans-serif;
+  }
+
+/* Used this table for unicodes refernce for icons 'conten' https://www.rapidtables.com/code/text/unicode-characters.html */
+.accordion:after {
+	content: '\2295'; 
+	font-size: 18px;
+	color: rgb(148, 147, 147);
+	float: right;
+	margin-left: 5px;
+	margin-right: 40px;
+  }
+
+  /*changing the icon after it has been clicked on to open up. */
+  .accordion .active:after {
+	content: "\229D"; /* for the minus symbol */
+  }
+
+
+
+/**************************************************************************/
+
+.main:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+.info {
+	display: block;
+	padding: 10px;
+	background-color: ghostwhite;
+}
+
+/* Michelle */
+.footer  {
+	color: rgb(0, 194, 228);
+	background-color: rgb(46, 46, 46);
+	text-align: center;
+	width: 100%;
+	padding: 1%;
+}
+
+/* Michelle */
+.footer h6 a {
+	color: rgb(230, 230, 230);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/***************************************************************************/
+/*KEZIA HEALTH PAGE*/
+
+/*Style the header, modified from Michelle's about-section*/
+.health-section {
+	padding: 50px;
+	text-align: center;
+	background-color: rgb(105, 160, 17);
+	color: white;
+}
+
+.health-section h1 {
+	color: rgb(255, 255, 255);
+}
+
+
+/*styling for Description List on Health Tips Page */
+/* Source: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_flexbox */
+.health-content {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	float: left;
+	-webkit-flex: 2;
+	-ms-flex: 2;
+	flex: 2;
+}
+
+
+/* Styling Description List */
+/* Source: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_description */
+
+.health-content h5{
+	padding: 20px;
+	font-size: large;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: uppercase;
+	color:  rgb(105, 160, 17);
+	margin-left: 77px;
+}
+
+.health-content h6{
+	padding: 20px;
+	font-size: large;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: uppercase;
+	color:  rgb(105, 160, 17);
+	margin-left: 24px;
+}
+
+/* Style the images on the Health page */
+/* Source: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_flexbox */
+.health-content img{
+	float: left;
+	padding: 15px;
+	-webkit-flex: 1;
+	-moz-float: 1px;
+	-ms-float: 1px;
+	flex: 1px;
+}
+
+.health-content p {
+	color: rgb(50, 57, 63);
+	padding: 10px;
+}
+
+/*KEZIA STUDY PAGE*/
+/* Style the header, modified from Michelle's about-section*/
+.study-section {
+	padding: 50px;
+	text-align: center;
+	background-color: rgb(194, 18, 127);
+	color: white;
+}
+
+.study-section h1 {
+	color: rgb(255, 255, 255);
+}
+
+.studytips p {
+	color: rgb(52, 54, 54);
+	padding: 10px;
+	margin: 10px;
+	text-shadow: 2px 2px 5px lightcyan;
+	font-size: large;
+}
+
+.studytips {
+	background-color: white;
+}
+
+
+/* Style the Ordered List */
+/* Source: https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-red-border */
+ul.study {
+	padding: 15px;
+	margin: 20px;
+	border-left: 5px solid rgb(0, 167, 209);
+	list-style-type: none;
+	padding: 10px 20px;
+}
+
+/* Source: https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-border */
+ul.study li {
+	color: #4c5054;
+	padding: 10px;
+}
+
+
+
+/***********************************************************************/
+
+
+/* Matt Pages
+Software and applications of software and programming headers*/
+
+.software-section {
+	padding: 50px;
+	text-align: center;
+	background-color: #FEEB44;
+	color: black;
+  }
+
+.program-section {
+	padding: 50px;
+	text-align: center;
+	background-color: #af5aff;
+	color: rgb(255, 255, 255);
+  }
+
+div.mattsection {
+	margin: 80px;
+	text-align: left;
+}
+
+ul.mattsection {
+	margin: 20px;
+}
+
+ul.hollieFix li{
+	padding: 10px;
+	list-style-type: none;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
+/* modified from Michelle's about-section*/
